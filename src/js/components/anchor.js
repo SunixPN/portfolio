@@ -15,7 +15,7 @@ export const anchor = () => {
 
     const mainButton = document.querySelector(".main__button")
     const aboutButton = document.querySelector(".about__button")
-    const skillButton = document.querySelector(".skill__button")
+    const skillButtons = document.querySelectorAll(".skill__button")
 
     mainButton.addEventListener("click", () => {
         about.scrollIntoView({ behavior: "smooth" })
@@ -26,12 +26,14 @@ export const anchor = () => {
         skill.scrollIntoView({ behavior: "smooth" })
         toggleClasses("skill")
     })
-    
-    skillButton.addEventListener("click", () => {
-        works.scrollIntoView({ behavior: "smooth" })
-        toggleClasses("works")
-    })
 
+    skillButtons.forEach(skillButton => {
+        skillButton.addEventListener("click", () => {
+            works.scrollIntoView({ behavior: "smooth" })
+            toggleClasses("works")
+        })
+    })
+    
     navContainer.addEventListener("click", (event) => {
         if (event.target.classList.contains("main__item")) {
             const currentItem = event.target.dataset.anchor
