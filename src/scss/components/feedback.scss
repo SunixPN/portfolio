@@ -1,0 +1,289 @@
+.feedback {
+    height: 750px;
+    background-color: #792AFF;
+}
+
+.wrappper--feedback {
+    padding-top: 172px;
+    position: relative;
+}
+
+.feedback__box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    max-width: 1068px;
+    width: calc(1068 / 1440 * 100%);
+    margin: 0 auto;
+    margin-top: 63px;
+    position: relative;
+    z-index: 1;
+}
+
+.feedback__block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.feedback__human {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 19px 19px 19px;
+    background-color: #D2D0F7;
+    border-radius: 10px;
+    box-shadow: 0 4px 0 black;
+}
+
+.feedback__circlebox {
+    display: flex;
+    align-items: center;
+    gap: 6.44px;
+}
+.feedback__circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.feedback__avatar {
+    margin-top: 10px;
+    width: 154px;
+    height: 140px;
+}
+
+.feedback__name {
+    font-weight: 700;
+    margin-top: 10px;
+    color: #2B2D35;
+    @include adaptive-font(14, 20);
+}
+
+.feedback__text {
+    max-width: 154px;
+    color: #00000080;
+    font-weight: 400;
+    @include adaptive-font(14, 20);
+}
+
+.feedback__message {
+    width: 313px;
+    height: 156px;
+    padding: 19px 0 0 37px;
+    position: relative;
+    z-index: 1;
+}
+
+.feedback__rectangle--message {
+    background-image: url(../images/svg/rectangle.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.feedback__rectangle {
+    background-image: url(../images/svg/rectangle-green.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 320px;
+    height: 162px;
+    z-index: -2;
+}
+
+.feedback__user-message {
+    max-width: 257px;
+    font-weight: 400;
+    @include adaptive-font(14, 20);
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////
+
+
+.feedback__circle1 {
+    position: absolute;
+    z-index: 0;
+    width: 14px;
+    height: 11px;
+}
+
+.feedback__circle1--1 {
+    top: 225px;
+    right: 326px;
+}
+
+.feedback__circle1--2 {
+    bottom: 129px;
+    right: 324px;
+}
+
+.feedback__circle2 {
+    position: absolute;
+    z-index: 0;
+    width: 18px;
+    height: 17px;
+}
+
+.feedback__circle2--1 {
+    top: 177px;
+    right: 349px;
+}
+
+.feedback__circle2--2 {
+    left: 143px;
+    top: 163px;
+}
+
+.feedback__circle2--3 {
+    bottom: 168px;
+    right: 258px;
+}
+
+.feedback__circle2--4 {
+    top: 195px;
+    left: 566px;
+}
+
+.feedback__comet {
+    position: absolute;
+    z-index: 0;
+}
+
+.feedback__comet--1 {
+    width: 113px;
+    height: 130px;
+    top: 132px;
+    left: 364px;
+}
+
+.feedback__comet--2 {
+    width: 66px;
+    height: 78px;
+    bottom: 80px;
+    left: 399px;
+    transform: rotate(90deg);
+}
+
+.feedback__planet {
+    position: absolute;
+    z-index: 0;
+    width: 246px;
+    height: 248px;
+    left: -40px;
+    bottom: 23px;
+    transform: rotate(90deg);
+}
+
+@media screen and (max-width: 1387px) {
+    .feedback__box {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 1338px) {
+    .feedback__comet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1117px) {
+    .feedback__box {
+        flex-direction: column;
+    }
+
+    .feedback__message {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+        background-color: white;
+        border: 2px solid #000000;
+        border-radius: 10px;
+        box-shadow: 2px 5px 0 #BBFF2C;
+    }
+
+    .feedback__rectangle {
+        display: none;
+    }
+
+    .feedback__rectangle--message {
+        display: none;
+    }
+
+    .feedback {
+        height: auto;
+    }
+
+    .wrappper--feedback {
+        padding-bottom: 20px;
+        padding-top: 72px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .feedback__block {
+        flex-direction: column;
+    }
+
+    .feedback__circle1 {
+        display: none;
+    }
+
+    .feedback__circle2 {
+        display: none;
+    }
+
+    .feedback__planet {
+        display: none;
+    }
+
+    .feedback__box {
+        margin-top: 36px;
+    }
+
+    .feedback__human {
+        width: 100%;
+        padding: 10px;
+        box-shadow: 3px 3px 0 black;
+    }
+
+    .feedback__circle {
+        width: 10px;
+        height: 10px;
+    }
+
+    .feedback__circlebox {
+        gap: 4px;
+    }
+
+    .feedback__avatar {
+        width: 100%;
+        height: 171px;
+    }
+
+    .feedback__block {
+        max-width: 210px;
+    }
+}

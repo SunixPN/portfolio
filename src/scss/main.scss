@@ -1,0 +1,39 @@
+@import "./constants/variables";
+
+@import "./constants/mixin";
+
+@import "./constants/reset";
+
+@import "./constants/fonts";
+
+@import "./components/*.scss";
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 6px
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #0090FF; 
+}
+
+
+html::-webkit-scrollbar-track {
+    background-color: #0091ff29;
+}
+
+body {
+    font-family: "ALS Sector Regular", sans-serif;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    height: 100%;
+}

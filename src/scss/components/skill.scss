@@ -1,0 +1,252 @@
+.skill {
+    height: 750px;
+    background-color: #792AFF;
+}
+
+.wrappper--skill {
+    padding-top: 145px;
+}
+
+.skill__box {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 638px;
+    margin: 40px auto 0 auto;
+}
+
+.skill__upper {
+    padding: 14px 0 14px 20px;
+    background-color: #D4D4FE;
+    display: flex;
+    align-items: center;
+    gap: 8.5px;
+    border: 1px solid #000000;
+    border-bottom-width: 2px;
+    border-radius: 5px 5px 0 0;
+}
+
+.skill__circle {
+    width: 21px;
+    height: 21px;
+}
+
+.skill__center {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-top: none;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 0 black;
+}
+
+.skill__paragraph {
+    font-weight: 700;
+    @include adaptive-font(14, 20);
+    color: black;
+    max-width: 558px;
+    text-align: center;
+    line-height: 21px;
+}
+
+.skill__imageBox {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 38px;
+}
+
+.skill__image {
+    width: 92px;
+    height: 92px;
+}
+
+.skill__button {
+    padding: 17px 0;
+    width: 289px;
+    text-align: center;
+    background-color: #BBFF2C;
+    border: 2px solid #000000;
+    font-weight: 700;
+    border-radius: 100px;
+    @include adaptive-font(14, 20);
+    color: black;
+    box-shadow: 4px 4px 0px 0px #000000;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////
+
+
+.skill__circle1 {
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    z-index: 0;
+    top: 136px;
+    right: 276px;
+}
+
+.skill__circle2 {
+    width: 14px;
+    height: 11px;
+    position: absolute;
+    z-index: 0;
+    top: 184px;
+    right: 253px;
+}
+
+.skill__comet {
+    position: absolute;
+    z-index: 0;
+}
+
+.skill__comet--1 {
+    width: 113px;
+    height: 130px;
+    top: 73px;
+    right: 382px;
+}
+
+.skill__comet--2 {
+    width: 66px;
+    height: 78px;
+    top: 139px;
+    left: 179px;
+    transform: rotate(90deg);
+}
+.skill__comet--3 {
+    width: 42px;
+    height: 50px;
+    top: 218px;
+    left: 197px;
+    transform: rotate(90deg);
+}
+
+.skill__planet1 {
+    width: 207px;
+    height: 200px;
+    left: -60px;
+    bottom: 40px;
+    position: absolute;
+    z-index: 0;
+}
+
+.skill__planet2 {
+    width: 246px;
+    height: 245px;
+    right: 8px;
+    bottom: 200px;
+    position: absolute;
+    z-index: 0;
+}
+
+.skill__button---mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .skill__comet--1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .skill__comet--2 {
+        display: none;
+    }
+
+    .skill__comet--3 {
+        left: 26px;
+        top: 96px;
+        width: 50px;
+        height: 58px;
+    }
+
+    .skill__circle1 {
+        top: 114px;
+        right: 131px;
+    }
+
+    .skill__circle2 {
+        top: 169px;
+        right: 74px;
+    }
+
+    .skill__planet1 {
+        display: none;
+    }
+
+    .skill__planet2 {
+        right: 0;
+        bottom: 125px;
+        width: 90px;
+        height: 90px;
+    }
+
+    .skill {
+        height: auto;
+    }
+
+    .skill__button---desktop {
+        display: none;
+    }
+
+    .skill__button---mobile {
+        display: block;
+        margin: 0 auto;
+        margin-top: 216px;
+        width: 205px;
+        padding: 15px 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    .wrappper--skill {
+        padding-bottom: 86px;
+        padding-top: 88px;
+    }
+    .skill__box {
+        padding: 0 20px;
+        width: 100%;
+        max-width: none;
+    }
+
+    .skill__imageBox {
+        margin-top: 33px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .skill__circle {
+        width: 10px;
+        height: 10px;
+    }
+    .skill__upper {
+        padding: 10px 0 10px 10px;
+        gap: 4px;
+    }
+
+    .skill__center {
+        padding: 37px 10px 47px 10px;
+    }
+
+    .skill__paragraph {
+        line-height: 14.69px;
+        max-width: 250px;
+    }
+}

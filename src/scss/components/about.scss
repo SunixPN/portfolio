@@ -1,0 +1,318 @@
+.about {
+    height: 750px;
+    background-color: #0090FF;
+    overflow: hidden;
+}
+
+.wrapper--about {
+    padding-top: 119px;
+}
+
+.title {
+    font-family: "Inter";
+    font-weight: 700;
+    @include adaptive-font(30, 80);
+    color: white;
+    text-shadow: 4px 4px 0 black;
+    text-align: center;
+}
+
+.about__box {
+    margin: 91px auto 0 auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.about__left {
+    background-color: #792AFF;
+    padding: 40px 20px 35px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 0 0 0 10px;
+}
+
+.about__text {
+    font-weight: 700;
+    @include adaptive-font(14, 20);
+    color: white;
+    max-width: 463px;
+    line-height: 20.99px;
+}
+
+.about__button {
+    margin-top: 30px;
+    align-self: flex-start;
+    padding: 20px 26px;
+    background-color: #BBFF2C;
+    border: 2px solid #000000;
+    font-weight: 700;
+    border-radius: 100px;
+    @include adaptive-font(14, 20);
+    color: black;
+    box-shadow: 4px 4px 0px 0px #000000;
+    cursor: pointer;
+}
+
+.about__right {
+    background-color: #D2D0F7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about__upper {
+    display: flex;
+    align-items: center;
+    gap: 6.73px;
+}
+
+.about__circle {
+    width: 16.82px;
+    height: 16.82px;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.about__circle--orange {
+    background-color: #FF6A00;
+}
+
+.about__circle--yellow {
+    background-color: #FFE603;
+}
+
+.about__circle--green {
+    background-color: #04C800;
+}
+
+.about__avatar {
+    margin-top: 20px;
+    width: 336px;
+    height: 186px;
+}
+
+.about__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.about__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.about__label {
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+}
+
+.about__value {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+
+
+///////////////////////////////////////////
+
+.about__circle1 {
+    position: absolute;
+    width: 14px;
+    height: 11px;
+    z-index: 0;
+}
+
+.about__circle1--1 {
+    left: 212px;
+    top: 132px;
+}
+
+.about__circle1--2 {
+    left: 185px;
+    top: 299px;
+}
+
+.about__circle1--3 {
+    right: 456px;
+    top: 72px;
+}
+
+.about__circle1--4 {
+    right: 421px;
+    top: 204px;
+}
+
+.about__circle1--5 {
+    right: 243px;
+    top: 425px;
+}
+
+.about__circle2 {
+    width: 18px;
+    height: 17px;
+    position: absolute;
+    z-index: 0;
+}
+
+.about__circle2--1 {
+    left: 80px;
+    top: 78px;
+}
+
+.about__circle2--2 {
+    left: 208px;
+    top: 251px;
+}
+
+.about__wind {
+    width: 179px;
+    height: 162px;
+    position: absolute;
+    left: 60px;
+    bottom: 90px;
+    z-index: 0;
+}
+
+.about__circle3 {
+    width: 44px;
+    height: 15px;
+    position: absolute;
+    left: 95px;
+    bottom: 82px;
+    z-index: 0;
+}
+
+.about__circle4 {
+    width: 44px;
+    height: 30px;
+    position: absolute;
+    left: 153px;
+    bottom: 67px;
+    z-index: 0;
+}
+
+.about__comet {
+    width: 113px;
+    height: 130px;
+    position: absolute;
+    z-index: 0;
+    right: 106px;
+    bottom: 103px;
+}
+
+.about__planet {
+    width: 200px;
+    height: 214px;
+    position: absolute;
+    z-index: 0;
+    right: -60px;
+    top: 95px;
+    z-index: 0;
+}
+
+@media screen and (max-width: 945px) {
+    .about__box {
+        flex-direction: column-reverse;
+        gap: 34px;
+        margin-top: 55px;
+    }
+
+    .about {
+        height: 100%;
+    }
+
+    .wrapper--about {
+        padding-top: 78px;
+        padding-bottom: 109px;
+    }
+
+    .about__list {
+        margin-top: 15px;
+        gap: 0;
+    }
+
+    .about__right {
+        padding: 15px;
+    }
+
+    .about__left {
+        padding: 30px 10px 27px 10px;
+        box-shadow: 0 4px 0 black;
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .about__circle1--1 {
+        display: none;
+    }
+
+    .about__circle1--2 {
+        display: none;
+    }
+
+    .about__circle1--3 {
+        display: none;
+    }
+
+    .about__circle1--4 {
+        display: none;
+    }
+
+    .about__circle1--5 {
+        top: 110px;
+        right: 65px;
+    }
+
+    .about__circle2--1 {
+        display: none;
+    }
+
+    .about__circle2--2 {
+        top: 93px;
+        left: 191px;
+    }
+
+    .about__planet {
+        width: 82px;
+        height: 80px;
+        left: -40px;
+        top: 110px;
+        transform: rotate(180deg);
+    }
+
+    .about__wind {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .about__box {
+        align-items: stretch;
+    }
+
+    .about__avatar {
+        width: 100%;
+    }
+
+    .about__button {
+        align-self: center;
+        padding: 15px 80px;
+        margin-top: 28px;
+    }
+
+    .about__text {
+        line-height: 14.69px;
+        max-width: 300px;
+    }
+}
