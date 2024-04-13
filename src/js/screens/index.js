@@ -3,6 +3,8 @@ import { burgerLogic } from "../components/burger.js"
 import { tracking } from "../components/tracking.js"
 
 document.addEventListener("DOMContentLoaded", () => {
+    window.isOpen = false
+
     burgerLogic()
     anchor()
     tracking()

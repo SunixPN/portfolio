@@ -3,12 +3,10 @@ export const burgerLogic = () => {
     const navContainer = document.querySelector(".burger__nav")
     const burgerLines = document.querySelectorAll(".burger__line")
 
-    let isOpen = false
-
     button.addEventListener("click", () => {
-        isOpen = !isOpen
+        window.isOpen = !window.isOpen
         navContainer.classList.toggle("burger__nav--active")
-        if (isOpen) {
+        if (window.isOpen) {
             document.body.style.overflow = "hidden"
             button.style.zIndex = 30
             button.style.top = "7px"

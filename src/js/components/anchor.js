@@ -13,6 +13,25 @@ export const anchor = () => {
     const navContainer = document.querySelector(".burger__nav")
     const burgerLines = document.querySelectorAll(".burger__line")
 
+    const mainButton = document.querySelector(".main__button")
+    const aboutButton = document.querySelector(".about__button")
+    const skillButton = document.querySelector(".skill__button")
+
+    mainButton.addEventListener("click", () => {
+        about.scrollIntoView({ behavior: "smooth" })
+        toggleClasses("about")
+    })
+
+    aboutButton.addEventListener("click", () => {
+        skill.scrollIntoView({ behavior: "smooth" })
+        toggleClasses("skill")
+    })
+    
+    skillButton.addEventListener("click", () => {
+        works.scrollIntoView({ behavior: "smooth" })
+        toggleClasses("works")
+    })
+
     navContainer.addEventListener("click", (event) => {
         if (event.target.classList.contains("main__item")) {
             const currentItem = event.target.dataset.anchor
@@ -52,6 +71,8 @@ export const anchor = () => {
         burgerLines.forEach(elem => {
             elem.style = ""
         })
+
+        window.isOpen = !window.isOpen
     })
 
     mainNav.addEventListener("click", (event) => {
