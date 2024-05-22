@@ -88,7 +88,8 @@ gulp.task("server:docs", () => {
     .src("./docs/")
     .pipe(server({
         livereload: true,
-        open: true
+        open: true,
+        port: 8080
     }))
 })
 

@@ -71,7 +71,8 @@ gulp.task("server:dev", () => {
     .src("./build/")
     .pipe(server({
         livereload: true,
-        open: true
+        open: true,
+        port: 8080
     }))
 })
 
